@@ -1,0 +1,260 @@
+/*========================================================
+                        Camera
+=========================================================*/
+.camera_container {
+  position: relative;
+  padding-bottom: 29.26829%;
+}
+
+@media (max-width: 1195.83333px) {
+  .camera_container {
+    padding-bottom: 350px;
+  }
+}
+.camera_wrap {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin-bottom: 0 !important;
+  height: 100%;
+  background: #fff;
+  z-index: 0;
+}
+
+.camera_wrap img {
+  max-width: none !important;
+}
+
+.camera_fakehover {
+  height: 100%;
+  min-height: 60px;
+  position: relative;
+  width: 100%;
+}
+
+.camera_src {
+  display: none;
+}
+
+.cameraCont, .cameraContents {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.cameraSlide {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.cameraContent {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+}
+
+.camera_target {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  text-align: left;
+  z-index: 0;
+}
+
+.camera_overlayer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.camera_target_content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.camera_loader {
+  background: #fff url(../images/camera-loader.gif) no-repeat center;
+  border: 1px solid #ffffff;
+  border-radius: 18px;
+  height: 36px;
+  left: 50%;
+  overflow: hidden;
+  position: absolute;
+  margin: -18px 0 0 -18px;
+  top: 50%;
+  width: 36px;
+  z-index: 3;
+}
+
+.camera_nav_cont {
+  height: 65px;
+  overflow: hidden;
+  position: absolute;
+  right: 9px;
+  top: 15px;
+  width: 120px;
+  z-index: 4;
+}
+
+.camerarelative {
+  overflow: hidden;
+  position: relative;
+}
+
+.imgFake {
+  cursor: pointer;
+}
+
+.camera_command_wrap .hideNav {
+  display: none;
+}
+
+.camera_command_wrap {
+  left: 0;
+  position: relative;
+  right: 0;
+  z-index: 4;
+}
+
+.showIt {
+  display: none;
+}
+
+.camera_clear {
+  clear: both;
+  display: block;
+  height: 1px;
+  margin: -1px 0 25px;
+  position: relative;
+}
+
+.camera_caption {
+  display: none;
+}
+
+.cameraContent .camera_caption {
+  display: block;
+}
+
+/*================   Custom Layout&Styles   =====================*/
+.camera_caption {
+  position: absolute;
+  left: 50%;
+  top: 54%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.camera_caption h1, .camera_caption h2, .camera_caption h3, .camera_caption h4, .camera_caption h5, .camera_caption h6 {
+  color: #fff;
+}
+.camera_caption h2 {
+  display: block;
+  margin-right: 18px;
+}
+.camera_caption h2 span {
+  margin-left: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.camera_caption > div {
+  height: 100%;
+}
+
+.camera_pag {
+  position: relative;
+  bottom: 42px;
+}
+.camera_pag_ul {
+  text-align: center;
+}
+.camera_pag_ul li {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #fff;
+  -moz-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+.camera_pag_ul li.cameracurrent, .camera_pag_ul li:hover {
+  background: #0173B9;
+}
+.camera_pag_ul li + li {
+  margin-left: 8px;
+}
+.camera_pag_ul li > span {
+  display: none;
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .camera_caption * + .btn {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 1199px) {
+  .camera_caption * + .btn {
+    margin-top: 0;
+  }
+  .camera_caption h2 {
+    margin-right: 0;
+  }
+  .camera_caption h2 span {
+    margin-left: 0;
+  }
+
+  .camera_pag {
+    bottom: 20px;
+  }
+}
+@media (min-width: 480px) and (max-width: 979px) {
+  .camera_caption h2 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .camera_caption .btn {
+    padding: 13px 22px 13px 22px;
+  }
+}
+@media (max-width: 479px) {
+  .camera_caption h2 {
+    font-size: 38px;
+    line-height: 45px;
+  }
+  .camera_caption .btn {
+    padding: 12px 18px 11px 18px;
+  }
+}
